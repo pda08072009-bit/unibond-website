@@ -6,11 +6,6 @@
     <title>UniBond - Найдите друзей перед поступлением</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
-    <!-- Firebase -->
-    <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-app-compat.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-auth-compat.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-firestore-compat.js"></script>
-    
     <style>
         /* Общие стили */
         :root {
@@ -718,9 +713,15 @@
                 <div class="footer-column">
                     <h3>UniBond</h3>
                     <p>Платформа для знакомства абитуриентов, поступающих в учебные заведения.</p>
-                    
                 </div>
-                
+                <div class="footer-column">
+                    <h3>Поддержка</h3>
+                    <ul class="footer-support">
+                        <li>
+                            <a href="#">@</a>
+                        </li>
+                    </ul>
+                </div>
                 
                 
                 
@@ -728,8 +729,8 @@
                     <h3>Контакты</h3>
                     <ul class="footer-links">
                         <li><i class="fas fa-envelope"></i> info@unibond.ru</li>
-                        <li><i class="fas fa-phone"></i> +7 (495) 123-45-67</li>
-                        <li><i class="fas fa-map-marker-alt"></i> Москва, ул. Студенческая, 15</li>
+                        <li><i class="fas fa-phone"></i> +7 (925) 520-17-04</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Москва, ул. Профсоюзная, 118Б</li>
                     </ul>
                 </div>
             </div>
@@ -741,22 +742,9 @@
     </footer>
 
     <script>
-const firebaseConfig = {
-  apiKey: "AIzaSyAEFkNR05lrazydscCbBnQTqd87mnfOGr8",
-  authDomain: "unibond-your-project.firebaseapp.com",
-  projectId: "unibond-your-project",
-  storageBucket: "unibond-your-project.firebasestorage.app",
-  messagingSenderId: "485600582629",
-  appId: "1:485600582629:web:e81a9ebc319fed8fbced0c"
-};
 
-// Initialize Firebase
-const app = initializeApp(firebaseConfig);
 
-        // Initialize Firebase
-        firebase.initializeApp(firebaseConfig);
-        const auth = firebase.auth();
-        const db = firebase.firestore();
+
 
         // Authentication state observer
         auth.onAuthStateChanged((user) => {
